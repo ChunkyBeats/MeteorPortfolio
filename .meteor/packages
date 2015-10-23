@@ -21,3 +21,4 @@ insecure                # Allow all DB writes from clients (for prototyping)
 react
 less
 nemo64:bootstrap
+iron:router
