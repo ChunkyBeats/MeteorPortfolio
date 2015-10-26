@@ -4,8 +4,8 @@
 
 <body>
 
-  <nav class="navbar navbar-static-top navbar-inverse">
-    <div class="navbar-inner">
+  <!-- <nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
       <ul class="nav navbar-nav">
         <li><a href="/">Home</a></li>
         <li><a href="/button">Hit The Button</a></li>
@@ -16,32 +16,34 @@
         </div>
       </ul>
     </div>
+  </nav> -->
 
-  </nav>
 
-  <div class="container">
-    <h1>Welcome to Meteor!</h1>
-  </div>
+  <template name="portfolio">
+    <div class="container">
+      <h1>Welcome to Meteor!</h1>
+    </div>
+  </template>
 
-  <script type="text/babel">
-    var AccountsUIWrapper = React.createClass({
-      componentDidMount() {
-        this.view = Blaze.render(Template.loginButtons,
-          React.findDOMNode(this.refs.container));
-      },
-      componentWillUnmount() {
-        Blaze.remove(this.view);
-      },
-      render() {
-        return <span ref="container" />;
-      }
-    });
-
-    ReactDOM.render(
-      <AccountsUIWrapper />
-      document.getElementById('accounts')
-    );
-
-  </script>
+  <!-- //  <script type="text/babel"> -->
+  <!-- //   var AccountsUIWrapper = React.createClass({
+  //     componentDidMount() {
+  //       this.view = Blaze.render(Template.loginButtons,
+  //         React.findDOMNode(this.refs.container));
+  //     },
+  //     componentWillUnmount() {
+  //       Blaze.remove(this.view);
+  //     },
+  //     render() {
+  //       return <span ref="container" />;
+  //     }
+  //   });
+  //
+  //   ReactDOM.render(
+  //     <AccountsUIWrapper />
+  //     document.getElementById('accounts')
+  //   );
+  //
+  // </script> -->
 
 </body>
