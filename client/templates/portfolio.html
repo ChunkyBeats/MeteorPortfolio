@@ -3,6 +3,7 @@
 </head>
 
 <body>
+
   <nav class="navbar navbar-static-top navbar-inverse">
     <div class="navbar-inner">
       <ul class="nav navbar-nav">
@@ -10,10 +11,37 @@
         <li><a href="/button">Hit The Button</a></li>
         <li><a href="/about">About Me</a></li>
       </ul>
+      <ul class="pull-right">
+        <div id="render-target">
+        </div>
+      </ul>
     </div>
 
   </nav>
 
-  <h1>Welcome to Meteor!</h1>
+  <div class="container">
+    <h1>Welcome to Meteor!</h1>
+  </div>
+
+  <script type="text/babel">
+    var AccountsUIWrapper = React.createClass({
+      componentDidMount() {
+        this.view = Blaze.render(Template.loginButtons,
+          React.findDOMNode(this.refs.container));
+      },
+      componentWillUnmount() {
+        Blaze.remove(this.view);
+      },
+      render() {
+        return <span ref="container" />;
+      }
+    });
+
+    ReactDOM.render(
+      <AccountsUIWrapper />
+      document.getElementById('accounts')
+    );
+
+  </script>
 
 </body>

@@ -1,0 +1,17 @@
+body {
+  height: 100vh;
+  background-color: red;
+  background-image:
+    linear-gradient(
+      #439FE8, gray
+    );
+
+  color: white;
+
+  div {
+    border-radius: 5px;
+    background: #dce6e1;
+    color: black;
+  }
+
+}

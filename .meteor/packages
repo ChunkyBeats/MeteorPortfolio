@@ -22,3 +22,6 @@ react
 less
 nemo64:bootstrap
 iron:router
+accounts-ui
+accounts-password
+fourseven:scss
