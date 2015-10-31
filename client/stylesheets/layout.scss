@@ -28,6 +28,17 @@
       margin-right: 0;
       margin-left: 0;
 
+      .navbar-header {
+        text-align: center;
+
+        .avatar {
+          width: 75px;
+          height: 75px;
+          border-radius: 50px;
+          overflow: hidden;
+        }
+      }
+
       li {
         text-align: left;
         padding-left: 10px;
