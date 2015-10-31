@@ -29,14 +29,20 @@
       margin-left: 0;
 
       .navbar-header {
-        text-align: center;
+        margin: auto;
+        width: 105px;
 
-        .avatar {
-          width: 75px;
-          height: 75px;
-          border-radius: 50px;
-          overflow: hidden;
+        a {
+
+          .avatar {
+            width: 75px;
+            height: 75px;
+            border-radius: 50px;
+            overflow: hidden;
+          }
         }
+
+
       }
 
       li {
