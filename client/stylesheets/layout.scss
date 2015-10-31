@@ -29,7 +29,8 @@
       margin-left: 0;
 
       li {
-        text-align: center;
+        text-align: left;
+        padding-left: 10px;
         a {
           font-weight: 500;
           color: white;
@@ -40,8 +41,8 @@
 
           &:hover {
             color: #DADADA;
-            -webkit-transform:scale(1.1);
-            transform:scale(1.1);
+            -webkit-transform:translateX(20px);
+            transform: translateX(20px);
           }
         }
       }
